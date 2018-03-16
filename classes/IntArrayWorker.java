@@ -44,6 +44,39 @@ public class IntArrayWorker
     }
     return total;
   }
+
+  public int getCount(int num)
+  {
+      int count = 0;
+      for(int i = 0; i < matrix.length; i++) {
+          for(int j = 0; j < matrix[i].length; j++) {
+              if(matrix[i][j] == num) {
+                  count++;
+              }
+          }
+      }
+      return count;
+  }
+
+  public int getLargest() {
+      int max = matrix[0][0];
+      for(int i = 0; i < matrix.length; i++) {
+          for(int j = 0; j < matrix[i].length; j++) {
+              if(matrix[i][j] > max) {
+                  max = matrix[i][j];
+              }
+          }
+      }
+      return max;
+  }
+
+  public int getColTotal(int num) {
+      int sum = 0;
+      for(int i = 0; i < matrix.length; i++) {
+          sum += matrix[i][num];
+      }
+      return sum;
+  }
   
   /**
    * Method to fill with an increasing count
