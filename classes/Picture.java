@@ -445,7 +445,7 @@ public class Picture extends SimplePicture
     beach.keepOnlyBlue();
     beach.explore();
     Picture p = new Picture("images/small.jpg");
-    Picture smallP = p.scale(0.9, 0.9);
+    Picture smallP = p.scale(0.7, 0.7);
     smallP.write("smallerSmall.jpg");
   }
   
